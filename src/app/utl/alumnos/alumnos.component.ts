@@ -6,9 +6,6 @@ import { AlumnosUtl } from '../utl';
 import { ProyectoapiService } from '../proyectoapi.service';
 import { RouterLink } from '@angular/router';
  
- 
- 
- 
 @Component({
   selector: 'app-alumnos',
   standalone: true,
@@ -18,8 +15,6 @@ import { RouterLink } from '@angular/router';
   styles: ``
 })
 export default class AlumnosComponent implements OnInit {
- 
- 
   imageWidth:number=50;
   imageMargin:number=2;
   muestraImg:boolean=true;
@@ -64,7 +59,7 @@ export default class AlumnosComponent implements OnInit {
  
   }
   ngOnInit(): void {
-     this.alumnosUtl.getAlumnos().subscribe(
+    this.alumnosUtl.getAlumnos().subscribe(
       {
         next: response=>{
  
